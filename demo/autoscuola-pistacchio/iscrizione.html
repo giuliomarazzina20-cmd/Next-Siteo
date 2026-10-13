@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pre-iscrizione online | Autoscuola Pistacchio (demo)</title>
+  <meta name="description" content="Pre-iscrizione in tre passaggi e checklist dei documenti: esempio di modulo online per autoscuole, realizzato da Next Siteo. Non invia dati.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f5c4d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Pre-iscrizione online | Autoscuola Pistacchio (demo)">
+  <meta property="og:description" content="Pre-iscrizione in tre passaggi e checklist dei documenti: esempio di modulo online per autoscuole, realizzato da Next Siteo. Non invia dati.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../comune/barra-demo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="iscrizione">
+  <!-- Icone disegnate per il sito: griglia 24x24, tratto 2 -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19.5 12h-15M10.5 6l-6 6 6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5.5v13M15 5.5v13"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.8 5.4 3.6 8.2 9 9-5.4.8-8.2 3.6-9 9-.8-5.4-3.6-8.2-9-9 5.4-.8 8.2-3.6 9-9z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.2 3.8h2.6l1.6 4.3-2.1 1.4a10.8 10.8 0 0 0 6.2 6.2l1.4-2.1 4.3 1.6v2.6a1.9 1.9 0 0 1-2 1.9A15.7 15.7 0 0 1 4.3 5.8a1.9 1.9 0 0 1 1.9-2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8.3 8.3 0 0 1-12.2 7.3L3.5 20.4l1.5-4.5a8.3 8.3 0 1 1 15.5-4.4z"/><path d="M8.3 11.6h.01M12 11.6h.01M15.7 11.6h.01"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18h6.8a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-transit" viewBox="0 0 24 24"><rect x="5.5" y="3.5" width="13" height="13.5" rx="3"/><path d="M5.5 10.5h13M9 17l-2 3.5M15 17l2 3.5M9 14h.01M15 14h.01"/></symbol>
+    <symbol id="i-parking" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M9.5 17V7.5h3.2a2.8 2.8 0 0 1 0 5.6H9.5"/></symbol>
+    <symbol id="i-idcard" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><circle cx="8.5" cy="11" r="2"/><path d="M5.6 15.8a3.2 3.2 0 0 1 5.8 0M14 10h4M14 13.5h4"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3.5h8l4.5 4.5v12.5H6z"/><path d="M14 3.5V8h4.5M9 12.5h6M9 16h6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 4v4.5H15"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2.5"/><path d="M5.5 15.5h-.2A1.8 1.8 0 0 1 3.5 13.7V5.3a1.8 1.8 0 0 1 1.8-1.8h8.4a1.8 1.8 0 0 1 1.8 1.8v.2"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10.5 5 8 4.5 4 4.5v14c4 0 6.5.5 8 2 1.5-1.5 4-2 8-2v-14c-4 0-6.5.5-8 2z"/><path d="M12 6.5v14"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5.5 21V4M5.5 4.5h12l-2.2 4 2.2 4h-12"/></symbol>
+    <symbol id="i-steering" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.3"/><path d="M3.8 11c2.6 0 4.9.3 5.9 1M20.2 11c-2.6 0-4.9.3-5.9 1M12 14.3v6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19.5a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.3"/><path d="M15.8 14.2a4.5 4.5 0 0 1 5.2 4.3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.4-3 7.8-7 9-4-1.2-7-4.6-7-9V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M16.5 8V6a1.5 1.5 0 0 0-1.5-1.5H6A2.5 2.5 0 0 0 3.5 7"/><rect x="3.5" y="7.5" width="17" height="12" rx="2.5"/><path d="M16 13.5h.01"/></symbol>
+    <symbol id="i-euro" viewBox="0 0 24 24"><path d="M17.5 6.5a7.1 7.1 0 1 0 0 11"/><path d="M4.5 10.2h9M4.5 13.8h9"/></symbol>
+    <symbol id="i-scooter" viewBox="0 0 24 24"><circle cx="5.8" cy="17" r="2.3"/><circle cx="18.4" cy="17" r="2.3"/><path d="M8.1 17h5.4l2.8-7.2"/><path d="M15.2 5.5h2.6M16.5 5.5l1.9 11.5"/><path d="M3.5 14.2c.5-2.3 2.2-3.7 4.6-3.7h3.4"/></symbol>
+    <symbol id="i-moto" viewBox="0 0 24 24"><circle cx="5.5" cy="16.5" r="3.3"/><circle cx="18.5" cy="16.5" r="3.3"/><path d="M5.5 16.5 9.2 11h5.5l-2.2 5.5H8.8"/><path d="m18.5 16.5-3.3-9.5h-2.4M14.7 11l1.9-.2"/><path d="M8.2 9h3.8"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17H3.8a.8.8 0 0 1-.8-.8v-3c0-.6.4-1.1 1-1.3l1.6-.5 2-3.4A2 2 0 0 1 9.3 7h5.2a2 2 0 0 1 1.6.8l2.6 3.4 1.8.5c.6.2 1 .7 1 1.3v3.2a.8.8 0 0 1-.8.8H19M9 17h6"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5.8 11.2h12.5"/></symbol>
+    <symbol id="i-car-trailer" viewBox="0 0 24 24"><path d="M3 16.5H2.2a.7.7 0 0 1-.7-.7v-2.3c0-.4.3-.8.7-.9l1-.3 1.4-2.5a1.4 1.4 0 0 1 1.2-.8h3.6a1.4 1.4 0 0 1 1.1.6l1.9 2.6 1.1.4c.4.1.7.5.7.9v2.3h-1M6.4 16.5h2.4"/><circle cx="4.7" cy="16.5" r="1.6"/><circle cx="10.5" cy="16.5" r="1.6"/><path d="M13.2 15h2.3"/><path d="M15.5 16V11a1 1 0 0 1 1-1h5.5a1 1 0 0 1 1 1v5h-1.5M17.2 16h-1.7"/><circle cx="19" cy="16.8" r="1.6"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M4.3 17.5H3a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1h9.5a1 1 0 0 1 1 1v11H8.7"/><path d="M13.5 9h4.2l2.8 3.6v4.4a.5.5 0 0 1-.5.5h-1M13.5 17.5h1.3"/><circle cx="6.5" cy="17.5" r="2.2"/><circle cx="17" cy="17.5" r="2.2"/></symbol>
+    <symbol id="i-truck-trailer" viewBox="0 0 24 24"><path d="M3.2 16.5H2.5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v8.5a1 1 0 0 1-1 1h-1M6.8 16.5h1.1"/><circle cx="5" cy="16.8" r="1.8"/><circle cx="9.7" cy="16.8" r="1.8"/><path d="M13.5 15h1.5M15 16.5V10h4.2l3.3 3.5v3h-1.7M15 16.5h2.1"/><circle cx="19" cy="16.8" r="1.8"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+
+  <header class="header">
+    <div class="container header__bar">
+      <a href="index.html" class="logo" aria-label="Autoscuola Pistacchio, torna alla home">
+        <span class="logo__mark"><svg class="icon" aria-hidden="true"><use href="#i-steering"/></svg></span>
+        <span class="logo__text"><span class="logo__small">Autoscuola</span><span class="logo__big">Pistacchio</span></span>
+      </a>
+
+      <nav class="header__nav" aria-label="Menu principale">
+        <ul role="list">
+          <li><a href="patenti.html" data-nav="patenti">Patenti</a></li>
+          <li><a href="quiz.html" data-nav="quiz">Quiz</a></li>
+          <li><a href="index.html#genitori">Genitori</a></li>
+          <li><a href="index.html#sede">Sede</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="iscrizione.html" data-nav="iscrizione">Pre-iscrizione</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--sm header__wa" href="#whatsapp" data-demo-avviso="WhatsApp non è collegato: in un sito vero qui si aprirebbe la chat con la segreteria.">
+          <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+          <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-mobile bg-ink" id="menu-mobile" data-menu hidden>
+      <nav class="container" aria-label="Menu mobile">
+        <ul role="list">
+          <li><a href="patenti.html" data-nav="patenti">Patenti <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="quiz.html" data-nav="quiz">Quiz patente B <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="index.html#genitori">Per i genitori <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="index.html#sede">Sede e orari <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="index.html#faq">FAQ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="iscrizione.html" data-nav="iscrizione">Pre-iscrizione <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <div class="menu-mobile__cta">
+          <a class="btn" href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata."><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Chiama 000 000 0000</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto" tabindex="-1">
+
+    <section class="phero bg-lime" aria-labelledby="page-title">
+      <div class="container phero__inner">
+        <div class="phero__text">
+          <p class="eyebrow phero__eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-pencil"/></svg> Pre-iscrizione</p>
+          <h1 class="h1" id="page-title">Pre-iscriviti in <span class="nowrap"><span class="hl">tre passaggi</span></span></h1>
+          <p class="lead phero__lead">Ci vuole un minuto. Poi ti richiamiamo noi per completare l'iscrizione in segreteria.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-white" aria-labelledby="form-title">
+      <div class="container narrow">
+        <div class="card form-card">
+          <h2 class="sr-only" id="form-title">Modulo di pre-iscrizione</h2>
+          <ol class="steps-bar" role="list" data-steps-bar aria-label="Avanzamento">
+            <li>Cosa ti serve</li>
+            <li>I tuoi dati</li>
+            <li>Conferma</li>
+          </ol>
+
+          <form class="wizard" data-wizard novalidate>
+            <p class="muted" data-step-count aria-live="polite">Passo 1 di 3</p>
+
+            <fieldset class="wizard__step" data-step>
+              <legend class="wizard__title" data-step-title tabindex="-1">Cosa ti serve?</legend>
+              <div class="choices" role="radiogroup" aria-label="Patente o servizio">
+                <label class="choice"><input type="radio" name="patente" value="am"> AM</label>
+                <label class="choice"><input type="radio" name="patente" value="a1"> A1</label>
+                <label class="choice"><input type="radio" name="patente" value="a2"> A2</label>
+                <label class="choice"><input type="radio" name="patente" value="a"> A</label>
+                <label class="choice"><input type="radio" name="patente" value="b"> B</label>
+                <label class="choice"><input type="radio" name="patente" value="be"> BE</label>
+                <label class="choice"><input type="radio" name="patente" value="c"> C</label>
+                <label class="choice"><input type="radio" name="patente" value="ce"> CE</label>
+                <label class="choice"><input type="radio" name="patente" value="rinnovo"> Rinnovo</label>
+                <label class="choice"><input type="radio" name="patente" value="duplicato"> Duplicato</label>
+                <label class="choice"><input type="radio" name="patente" value="non-so"> Non lo so ancora</label>
+              </div>
+              <p class="field__error" data-err="patente" hidden></p>
+            </fieldset>
+
+            <fieldset class="wizard__step" data-step hidden>
+              <legend class="wizard__title" data-step-title tabindex="-1">I tuoi dati</legend>
+              <div class="wizard__row">
+                <div class="field">
+                  <label for="f-nome">Nome e cognome *</label>
+                  <input id="f-nome" name="nome" type="text" autocomplete="name">
+                  <p class="field__error" data-err="nome" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-tel">Telefono *</label>
+                  <input id="f-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel">
+                  <p class="field__error" data-err="telefono" hidden></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="muted">(facoltativa)</span></label>
+                <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email">
+                <p class="field__error" data-err="email" hidden></p>
+              </div>
+              <fieldset class="choices">
+                <legend>Chi sta compilando il modulo? *</legend>
+                <label class="choice"><input type="radio" name="chi" value="Io, per me"> Io, per me</label>
+                <label class="choice"><input type="radio" name="chi" value="Un genitore"> Un genitore, per il figlio o la figlia</label>
+              </fieldset>
+              <p class="field__error" data-err="chi" hidden></p>
+            </fieldset>
+
+            <fieldset class="wizard__step" data-step hidden>
+              <legend class="wizard__title" data-step-title tabindex="-1">Ultimi dettagli</legend>
+              <fieldset class="choices">
+                <legend>Quando preferisci le lezioni? <span class="muted">(facoltativo)</span></legend>
+                <label class="choice"><input type="checkbox" name="quando" value="Mattina"> Mattina</label>
+                <label class="choice"><input type="checkbox" name="quando" value="Pomeriggio"> Pomeriggio</label>
+                <label class="choice"><input type="checkbox" name="quando" value="Sera"> Sera</label>
+              </fieldset>
+              <div class="field">
+                <label for="f-msg">Vuoi dirci altro? <span class="muted">(facoltativo)</span></label>
+                <textarea id="f-msg" name="messaggio" rows="3" maxlength="1000"></textarea>
+              </div>
+              <div class="recap">
+                <p><strong>Riepilogo</strong></p>
+                <dl data-recap></dl>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox" name="privacy" value="si">
+                <span>Ho letto l'informativa privacy e accetto di essere ricontattato per la pre-iscrizione. *</span>
+              </label>
+              <p class="field__error" data-err="privacy" hidden></p>
+            </fieldset>
+
+            <div class="wizard__nav">
+              <button type="button" class="btn btn--white" data-back hidden><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg> Indietro</button>
+              <button type="button" class="btn btn--ink" data-next>Avanti <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <button type="submit" class="btn btn--lg" data-send hidden>Invia la pre-iscrizione <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            </div>
+          </form>
+
+          <div class="done" data-done tabindex="-1" hidden>
+            <p class="tool__kicker">Questa è una demo</p>
+            <h2 class="h3">Pre-iscrizione pronta (ma non inviata)</h2>
+            <p>Nessun dato è partito. In un sito vero la segreteria riceverebbe la richiesta già ordinata e ti richiamerebbe per fissare l'appuntamento.</p>
+            <button type="button" class="btn btn--ink" data-restart>Ricomincia</button>
+          </div>
+          <noscript><p>Per la pre-iscrizione online serve JavaScript. Puoi passare in segreteria in Via delle Rotonde 12.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-cream" id="documenti" aria-labelledby="doc-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow muted"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg> Strumento</p>
+          <h2 class="h2" id="doc-title">Cosa ti <span class="hl">serve</span> per iscriverti</h2>
+          <p class="lead muted">Spunta quello che hai già: quando è tutto pronto, passi in segreteria e in un attimo sei iscritto.</p>
+        </div>
+        <form class="card tool__card" data-check>
+          <fieldset class="check__list">
+            <legend class="h3">Documenti per l'iscrizione</legend>
+            <label class="check__item"><input type="checkbox" value="Documento d'identità valido"><span>Documento d'identità valido</span></label>
+            <label class="check__item"><input type="checkbox" value="Codice fiscale (tessera sanitaria)"><span>Codice fiscale (tessera sanitaria)</span></label>
+            <label class="check__item"><input type="checkbox" value="Due foto tessera recenti"><span>Due foto tessera recenti</span></label>
+            <label class="check__item"><input type="checkbox" value="Certificato medico (lo fai anche da noi, su appuntamento)"><span>Certificato medico (lo fai anche da noi, su appuntamento)</span></label>
+            <label class="check__item"><input type="checkbox" value="Permesso di soggiorno, se sei cittadino extra UE"><span>Permesso di soggiorno, se sei cittadino extra UE</span></label>
+          </fieldset>
+          <p class="tool__progress" data-check-progress aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer bg-ink">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo logo--inverse" aria-label="Autoscuola Pistacchio, torna alla home">
+          <span class="logo__mark"><svg class="icon" aria-hidden="true"><use href="#i-steering"/></svg></span>
+          <span class="logo__text"><span class="logo__small">Autoscuola</span><span class="logo__big">Pistacchio</span></span>
+        </a>
+        <p class="footer__claim">Patente in tasca, senza stress.</p>
+        <address>
+          <p>Via delle Rotonde 12, 00000 Vallefinta (XX)</p>
+          <p><a href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata.">000 000 0000</a></p>
+          <p><a href="#email" data-demo-avviso="L'indirizzo è finto: in un sito vero qui si aprirebbe l'email.">info@pistacchio.example</a></p>
+        </address>
+      </div>
+      <nav aria-label="Patenti">
+        <h2 class="footer__title">Patenti</h2>
+        <ul role="list">
+          <li><a href="patenti.html#am">Patente AM</a></li>
+          <li><a href="patenti.html#a2">Patenti A1, A2 e A</a></li>
+          <li><a href="patenti.html#b">Patente B e BE</a></li>
+          <li><a href="patenti.html#c">Patenti C e CE</a></li>
+          <li><a href="patenti.html#rinnovo">Rinnovo e duplicato</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Il sito">
+        <h2 class="footer__title">Il sito</h2>
+        <ul role="list">
+          <li><a href="iscrizione.html">Pre-iscrizione</a></li>
+          <li><a href="quiz.html">Quiz patente B</a></li>
+          <li><a href="index.html#genitori">Per i genitori</a></li>
+          <li><a href="index.html#sede">Sede e orari</a></li>
+          <li><a href="index.html#faq">Domande frequenti</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer__title">Segreteria</h2>
+        <dl class="footer__hours">
+          <div><dt>Lunedì-venerdì</dt><dd>9:30-12:30 e 15:00-19:00</dd></div>
+          <div><dt>Sabato</dt><dd>9:30-12:00</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>© <span data-year>2026</span> Autoscuola Pistacchio. Attività di fantasia: sito dimostrativo.</p>
+      <p><a href="../../index.html">Realizzato da Next Siteo</a></p>
+    </div>
+  </footer>
+
+  <nav class="mobilebar" aria-label="Azioni rapide">
+    <a class="mobilebar__btn" href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata."><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>Chiama</span></a>
+    <a class="mobilebar__btn" href="#whatsapp" data-demo-avviso="WhatsApp non è collegato: in un sito vero qui si aprirebbe la chat con la segreteria."><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span></a>
+    <a class="mobilebar__btn mobilebar__btn--main" href="iscrizione.html"><svg class="icon" aria-hidden="true"><use href="#i-pencil"/></svg><span>Iscriviti</span></a>
+  </nav>
+
+  <script src="../comune/barra-demo.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

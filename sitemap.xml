@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- URL SEGNAPOSTO: sostituire "https://NOMEUTENTE.github.io/NOMEREPO/" con l'indirizzo vero (vedi README, punto 7).
+     Le demo non sono elencate perché hanno noindex. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://NOMEUTENTE.github.io/NOMEREPO/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://NOMEUTENTE.github.io/NOMEREPO/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

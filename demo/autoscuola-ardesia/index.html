@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Autoscuola Ardesia, Vallefinta | Demo di Next Siteo</title>
+  <meta name="description" content="Sito dimostrativo di un'autoscuola di quartiere di fantasia: patenti dalla AM alla CQC, orari della segreteria, documenti per iscriversi e mappa della zona. Realizzato da Next Siteo.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1b2b4b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Autoscuola Ardesia | Sito dimostrativo di Next Siteo">
+  <meta property="og:description" content="Un esempio di sito classico per un'autoscuola di quartiere. Attività di fantasia.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../comune/barra-demo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.2 3.8h2.6l1.6 4.3-2.1 1.4a10.8 10.8 0 0 0 6.2 6.2l1.4-2.1 4.3 1.6v2.6a1.9 1.9 0 0 1-2 1.9A15.7 15.7 0 0 1 4.3 5.8a1.9 1.9 0 0 1 1.9-2z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10.5 5 8 4.5 4 4.5v14c4 0 6.5.5 8 2 1.5-1.5 4-2 8-2v-14c-4 0-6.5.5-8 2z"/><path d="M12 6.5v14"/></symbol>
+    <symbol id="i-wheel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.3"/><path d="M3.8 11c2.6 0 4.9.3 5.9 1M20.2 11c-2.6 0-4.9.3-5.9 1M12 14.3v6"/></symbol>
+    <symbol id="i-medic" viewBox="0 0 24 24"><rect x="3.5" y="6.5" width="17" height="13" rx="2"/><path d="M9 6.5V5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5v1.5M12 10v6M9 13h6"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8.2 18h6.8a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.8"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+
+  <div class="infobar">
+    <div class="container infobar__inner">
+      <p class="infobar__open"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> <span data-today-text>Segreteria: lunedì-venerdì 9:00-12:30 e 15:30-19:00, sabato 9:00-12:00</span></p>
+      <p>Tel. <a href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata.">000 000 0000</a></p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__bar">
+      <a class="brand" href="index.html" aria-label="Autoscuola Ardesia, torna all'inizio">
+        <svg class="brand__mark" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
+          <circle cx="22" cy="22" r="21" fill="#1b2b4b"/>
+          <circle cx="22" cy="22" r="17.5" fill="none" stroke="#fbfaf6" stroke-width="1"/>
+          <text x="22" y="30" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="22" fill="#fbfaf6">A</text>
+        </svg>
+        <span class="brand__name"><strong>Autoscuola Ardesia</strong><span>Borgo Antico, Vallefinta</span></span>
+      </a>
+      <nav class="nav" aria-label="Menu principale">
+        <ul role="list">
+          <li><a href="#patenti">Patenti</a></li>
+          <li><a href="#orari">Orari</a></li>
+          <li><a href="#documenti">Documenti</a></li>
+          <li><a href="#dove">Dove siamo</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg> Menu
+      </button>
+    </div>
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" data-menu hidden>
+      <ul class="container" role="list">
+        <li><a href="#patenti">Patenti</a></li>
+        <li><a href="#orari">Orari</a></li>
+        <li><a href="#documenti">Documenti</a></li>
+        <li><a href="#dove">Dove siamo</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__kicker">La scuola guida del Borgo Antico</p>
+          <h1 id="hero-title">La patente, insegnata <em>con calma</em> e serietà.</h1>
+          <p class="hero__lead">Corsi per tutte le patenti, dalla AM alla CQC. Una segreteria che ti risponde di persona e istruttori che ti seguono fino all'esame.</p>
+          <div class="btn-row">
+            <a class="btn" href="#orari">Orari e documenti</a>
+            <a class="btn btn--line" href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata."><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Chiama la segreteria</a>
+          </div>
+        </div>
+        <svg class="hero__art" viewBox="0 0 560 420" role="img" aria-labelledby="art-t">
+          <title id="art-t">Illustrazione: la sede dell'autoscuola con l'insegna e un'auto della scuola guida davanti</title>
+          <rect x="0" y="380" width="560" height="40" fill="#e7e1d2"/>
+          <path d="M0 380H560" stroke="#1b2b4b" stroke-width="3"/>
+          <rect x="30" y="70" width="360" height="310" fill="#f3eee2" stroke="#1b2b4b" stroke-width="3"/>
+          <rect x="20" y="54" width="380" height="18" fill="#1b2b4b"/>
+          <g fill="#1b2b4b"><rect x="40" y="72" width="8" height="6"/><rect x="70" y="72" width="8" height="6"/><rect x="100" y="72" width="8" height="6"/><rect x="130" y="72" width="8" height="6"/><rect x="160" y="72" width="8" height="6"/><rect x="190" y="72" width="8" height="6"/><rect x="220" y="72" width="8" height="6"/><rect x="250" y="72" width="8" height="6"/><rect x="280" y="72" width="8" height="6"/><rect x="310" y="72" width="8" height="6"/><rect x="340" y="72" width="8" height="6"/><rect x="370" y="72" width="8" height="6"/></g>
+          <g stroke="#1b2b4b" stroke-width="3"><rect x="76" y="96" width="70" height="54" fill="#c9d3e6"/><rect x="274" y="96" width="70" height="54" fill="#c9d3e6"/><path d="M111 96v54M309 96v54"/><path d="M70 152h82M268 152h82"/></g>
+          <rect x="60" y="168" width="300" height="50" fill="#1b2b4b"/>
+          <text x="210" y="200" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="21" letter-spacing="3" fill="#fbfaf6">AUTOSCUOLA ARDESIA</text>
+          <g stroke="#1b2b4b" stroke-width="2"><rect x="50" y="226" width="32" height="24" fill="#a8321f"/><rect x="82" y="226" width="32" height="24" fill="#fbfaf6"/><rect x="114" y="226" width="32" height="24" fill="#a8321f"/><rect x="146" y="226" width="32" height="24" fill="#fbfaf6"/><rect x="178" y="226" width="32" height="24" fill="#a8321f"/><rect x="210" y="226" width="32" height="24" fill="#fbfaf6"/><rect x="242" y="226" width="32" height="24" fill="#a8321f"/><rect x="274" y="226" width="32" height="24" fill="#fbfaf6"/><rect x="306" y="226" width="32" height="24" fill="#a8321f"/><rect x="338" y="226" width="32" height="24" fill="#fbfaf6"/></g>
+          <g stroke="#1b2b4b" stroke-width="2"><path d="M50 250a16 9 0 0 0 32 0z" fill="#a8321f"/><path d="M82 250a16 9 0 0 0 32 0z" fill="#fbfaf6"/><path d="M114 250a16 9 0 0 0 32 0z" fill="#a8321f"/><path d="M146 250a16 9 0 0 0 32 0z" fill="#fbfaf6"/><path d="M178 250a16 9 0 0 0 32 0z" fill="#a8321f"/><path d="M210 250a16 9 0 0 0 32 0z" fill="#fbfaf6"/><path d="M242 250a16 9 0 0 0 32 0z" fill="#a8321f"/><path d="M274 250a16 9 0 0 0 32 0z" fill="#fbfaf6"/><path d="M306 250a16 9 0 0 0 32 0z" fill="#a8321f"/><path d="M338 250a16 9 0 0 0 32 0z" fill="#fbfaf6"/></g>
+          <rect x="56" y="268" width="104" height="92" fill="#c9d3e6" stroke="#1b2b4b" stroke-width="3"/>
+          <rect x="72" y="284" width="72" height="50" fill="#fbfaf6" stroke="#1b2b4b" stroke-width="1.5"/>
+          <text x="108" y="304" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#1b2b4b">ISCRIZIONI</text>
+          <text x="108" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#a8321f">APERTE</text>
+          <rect x="175" y="262" width="70" height="118" fill="#1b2b4b"/>
+          <rect x="185" y="272" width="50" height="48" fill="#c9d3e6"/>
+          <circle cx="232" cy="334" r="3.5" fill="#fbfaf6"/>
+          <rect x="260" y="268" width="104" height="92" fill="#c9d3e6" stroke="#1b2b4b" stroke-width="3"/>
+          <path d="M312 282l26 46h-52z" fill="#fbfaf6" stroke="#a8321f" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M312 298v14M312 318v1" stroke="#1b2b4b" stroke-width="4" stroke-linecap="round"/>
+          <path d="M50 362h116M254 362h116" stroke="#1b2b4b" stroke-width="3"/>
+          <rect x="446" y="282" width="58" height="16" fill="#fbfaf6" stroke="#1b2b4b" stroke-width="2"/>
+          <text x="475" y="293.5" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="7.5" fill="#1b2b4b">SCUOLA GUIDA</text>
+          <path d="M380 362v-16q2-10 14-12l26-2 20-24q6-6 16-6h44q10 0 16 8l16 22q8 2 8 14v16z" fill="#a8321f" stroke="#1b2b4b" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M448 308l-14 20h40v-20zM480 308v20h42l-12-18q-4-2-8-2z" fill="#c9d3e6" stroke="#1b2b4b" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="412" cy="364" r="17" fill="#1b2b4b"/><circle cx="412" cy="364" r="7" fill="#fbfaf6"/>
+          <circle cx="510" cy="364" r="17" fill="#1b2b4b"/><circle cx="510" cy="364" r="7" fill="#fbfaf6"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section" id="patenti" aria-labelledby="patenti-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="patenti-title">Le patenti che insegniamo</h2>
+          <div class="rule" aria-hidden="true"><span></span></div>
+          <p>Dal ciclomotore all'autobus. Le età sono quelle previste dal Codice della strada: in segreteria verifichiamo insieme i requisiti.</p>
+        </div>
+        <div class="groups">
+          <article class="group">
+            <h3>Due ruote</h3>
+            <p>Per muoversi in città, già dai 14 anni.</p>
+            <ul role="list">
+              <li class="lic"><span class="lic__code">AM</span><span class="lic__name">Ciclomotori e minicar</span><span class="lic__age">Da 14 anni</span></li>
+              <li class="lic"><span class="lic__code">A1</span><span class="lic__name">Moto fino a 125</span><span class="lic__age">Da 16 anni</span></li>
+              <li class="lic"><span class="lic__code">A2</span><span class="lic__name">Moto fino a 35 kW</span><span class="lic__age">Da 18 anni</span></li>
+              <li class="lic"><span class="lic__code">A</span><span class="lic__name">Tutte le moto</span><span class="lic__age">Da 24 anni, o da 20 con la A2 da due anni</span></li>
+            </ul>
+          </article>
+          <article class="group">
+            <h3>Auto</h3>
+            <p>La patente di tutti i giorni, anche con il rimorchio.</p>
+            <ul role="list">
+              <li class="lic"><span class="lic__code">B</span><span class="lic__name">Auto fino a 3,5 tonnellate</span><span class="lic__age">Da 18 anni</span></li>
+              <li class="lic"><span class="lic__code">BE</span><span class="lic__name">Auto con rimorchio pesante</span><span class="lic__age">Da 18 anni, con la B</span></li>
+              <li class="lic"><span class="lic__code">R</span><span class="lic__name">Rinnovo e duplicato</span><span class="lic__age">Pratiche e visita medica in sede</span></li>
+            </ul>
+          </article>
+          <article class="group">
+            <h3>Per lavoro</h3>
+            <p>Camion, autobus e qualifiche professionali.</p>
+            <ul role="list">
+              <li class="lic lic--pro"><span class="lic__code">C1</span><span class="lic__name">Camion fino a 7,5 tonnellate</span><span class="lic__age">Da 18 anni</span></li>
+              <li class="lic lic--pro"><span class="lic__code">C</span><span class="lic__name">Camion</span><span class="lic__age">Da 21 anni, o da 18 con la CQC</span></li>
+              <li class="lic lic--pro"><span class="lic__code">CE</span><span class="lic__name">Camion con rimorchio</span><span class="lic__age">Da 21 anni, o da 18 con la CQC</span></li>
+              <li class="lic lic--pro"><span class="lic__code">D</span><span class="lic__name">Autobus</span><span class="lic__age">Da 24 anni, o da 21 con la CQC</span></li>
+              <li class="lic lic--pro"><span class="lic__code" style="font-size:0.875rem">CQC</span><span class="lic__name">Carta di qualificazione</span><span class="lic__age">Per guidare camion e autobus per lavoro</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper2" id="orari" aria-labelledby="orari-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="orari-title">Orari della segreteria</h2>
+          <div class="rule" aria-hidden="true"><span></span></div>
+          <p>Passa quando vuoi negli orari di apertura: niente appuntamento per informazioni e iscrizioni.</p>
+        </div>
+        <div class="hours">
+          <table class="timetable">
+            <caption class="sr-only">Orari di apertura della segreteria</caption>
+            <thead>
+              <tr><th scope="col">Giorno</th><th scope="col">Mattina</th><th scope="col">Pomeriggio</th></tr>
+            </thead>
+            <tbody data-timetable>
+              <tr data-day="1"><th scope="row">Lunedì</th><td>9:00-12:30</td><td>15:30-19:00</td></tr>
+              <tr data-day="2"><th scope="row">Martedì</th><td>9:00-12:30</td><td>15:30-19:00</td></tr>
+              <tr data-day="3"><th scope="row">Mercoledì</th><td>9:00-12:30</td><td>15:30-19:00</td></tr>
+              <tr data-day="4"><th scope="row">Giovedì</th><td>9:00-12:30</td><td>15:30-19:00</td></tr>
+              <tr data-day="5"><th scope="row">Venerdì</th><td>9:00-12:30</td><td>15:30-19:00</td></tr>
+              <tr data-day="6"><th scope="row">Sabato</th><td>9:00-12:00</td><td>Chiuso</td></tr>
+              <tr data-day="0"><th scope="row">Domenica</th><td>Chiuso</td><td>Chiuso</td></tr>
+            </tbody>
+          </table>
+          <div class="notes">
+            <div class="note">
+              <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>
+              <div><h3>Lezioni di teoria</h3><p>Lunedì, mercoledì e venerdì dalle 18:30 alle 19:30, in aula.</p></div>
+            </div>
+            <div class="note">
+              <svg class="icon" aria-hidden="true"><use href="#i-wheel"/></svg>
+              <div><h3>Guide pratiche</h3><p>Su appuntamento, dal lunedì al sabato, anche nel primo pomeriggio.</p></div>
+            </div>
+            <div class="note">
+              <svg class="icon" aria-hidden="true"><use href="#i-medic"/></svg>
+              <div><h3>Visite mediche</h3><p>Per patente e rinnovi, in sede il martedì pomeriggio. Prenota in segreteria.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="documenti" aria-labelledby="doc-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="doc-title">Documenti per iscriversi</h2>
+          <div class="rule" aria-hidden="true"><span></span></div>
+          <p>Porta tutto la prima volta che passi: così la pratica parte subito.</p>
+        </div>
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Tipo di pratica">
+            <button type="button" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">Prima patente</button>
+            <button type="button" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Rinnovo</button>
+            <button type="button" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Duplicato</button>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+            <h3>Prima patente (auto e moto)</h3>
+            <ol class="doclist" role="list">
+              <li>Documento d'identità valido</li>
+              <li>Codice fiscale o tessera sanitaria</li>
+              <li>Due foto tessera recenti e uguali</li>
+              <li>Certificato medico per la patente (la visita si può fare in sede)</li>
+              <li>Per i cittadini non UE: permesso di soggiorno</li>
+            </ol>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
+            <h3>Rinnovo della patente</h3>
+            <ol class="doclist" role="list">
+              <li>La patente da rinnovare</li>
+              <li>Documento d'identità valido</li>
+              <li>Codice fiscale o tessera sanitaria</li>
+              <li>Una foto tessera recente</li>
+              <li>Occhiali o lenti, se li usi per guidare (servono alla visita)</li>
+            </ol>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
+            <h3>Duplicato della patente</h3>
+            <ol class="doclist" role="list">
+              <li>Denuncia di smarrimento o furto, oppure la patente rovinata</li>
+              <li>Documento d'identità valido</li>
+              <li>Codice fiscale o tessera sanitaria</li>
+              <li>Due foto tessera recenti e uguali</li>
+            </ol>
+          </div>
+          <p class="tabs__foot">La segreteria controlla i documenti insieme a te prima di avviare la pratica.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper2" id="dove" aria-labelledby="dove-title">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="dove-title">Dove siamo</h2>
+          <div class="rule" aria-hidden="true"><span></span></div>
+          <p>Nel cuore del Borgo Antico, a due passi da Piazza del Mercato.</p>
+        </div>
+        <div class="where">
+          <figure class="map">
+            <svg viewBox="0 0 640 400" role="img" aria-labelledby="map-t map-d">
+              <title id="map-t">Mappa del Borgo Antico</title>
+              <desc id="map-d">L'autoscuola è in Via del Mercato 3, all'angolo con Via del Borgo, vicino a Piazza del Mercato e alla fermata del bus linea 3.</desc>
+              <rect width="640" height="400" fill="#f3eee2"/>
+              <g fill="#e6dfcd">
+                <rect x="16" y="16" width="220" height="60" rx="4"/><rect x="286" y="16" width="190" height="60" rx="4"/>
+                <rect x="16" y="110" width="220" height="70" rx="4"/><rect x="286" y="110" width="150" height="70" rx="4"/>
+                <rect x="16" y="226" width="220" height="158" rx="4"/><rect x="456" y="226" width="60" height="70" rx="4"/>
+              </g>
+              <g stroke="#b9b09a" stroke-width="30" fill="none"><path d="M0 203H640"/><path d="M261 0V400"/><path d="M400 400L640 140"/></g>
+              <g stroke="#ffffff" stroke-width="26" fill="none"><path d="M0 203H640"/><path d="M261 0V400"/><path d="M400 400L640 140"/></g>
+              <g stroke="#b9b09a" stroke-width="18" fill="none"><path d="M0 93H500"/></g>
+              <g stroke="#ffffff" stroke-width="14" fill="none"><path d="M0 93H500"/></g>
+              <rect x="290" y="228" width="140" height="110" fill="#ffffff" stroke="#b9b09a" stroke-width="2"/>
+              <g fill="#cfd8c0" stroke="#8a9a77" stroke-width="1.5"><circle cx="310" cy="248" r="8"/><circle cx="410" cy="248" r="8"/><circle cx="310" cy="318" r="8"/><circle cx="410" cy="318" r="8"/></g>
+              <text x="360" y="288" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="600" font-size="15" fill="#1b2b4b">Piazza</text>
+              <text x="360" y="306" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="600" font-size="15" fill="#1b2b4b">del Mercato</text>
+              <text x="70" y="208" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="600" font-size="14" fill="#4f5868">Via del Mercato</text>
+              <text x="266" y="56" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="600" font-size="14" fill="#4f5868" transform="rotate(90 266 56)">Via del Borgo</text>
+              <text x="70" y="97" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="600" font-size="12" fill="#4f5868">Vicolo dei Tigli</text>
+              <text x="528" y="300" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="600" font-size="14" fill="#4f5868" transform="rotate(-47 528 300)">Viale della Stazione</text>
+              <g transform="translate(60 140)"><rect x="-22" y="-12" width="44" height="34" fill="#fbfaf6" stroke="#1b2b4b" stroke-width="2"/><path d="M0-30v20M-7-22h14" stroke="#1b2b4b" stroke-width="3"/><text x="0" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1b2b4b">Chiesa</text></g>
+              <g transform="translate(330 182)"><circle r="12" fill="#1b2b4b"/><text y="4.5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#fbfaf6">3</text><text x="18" y="-4" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1b2b4b">Bus</text></g>
+              <path d="M230 128c-14 0-25 11-25 24 0 18 25 38 25 38s25-20 25-38c0-13-11-24-25-24z" fill="#a8321f" stroke="#1b2b4b" stroke-width="2"/>
+              <circle cx="230" cy="152" r="9" fill="#fbfaf6"/>
+              <rect x="94" y="139" width="106" height="24" rx="4" fill="#1b2b4b"/>
+              <text x="147" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#fbfaf6">Autoscuola Ardesia</text>
+              <g transform="translate(600 40)"><circle r="18" fill="#fbfaf6" stroke="#1b2b4b" stroke-width="1.5"/><path d="M0-13l5 13H-5z" fill="#a8321f"/><path d="M0 13l5-13H-5z" fill="#1b2b4b"/><text y="-22" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="12" fill="#1b2b4b">N</text></g>
+            </svg>
+            <figcaption>Mappa disegnata della zona, non in scala.</figcaption>
+          </figure>
+          <div class="address">
+            <h3>Autoscuola Ardesia</h3>
+            <dl>
+              <div><dt>Indirizzo</dt><dd>Via del Mercato 3, 00000 Vallefinta (XX)</dd></div>
+              <div><dt>Con i mezzi</dt><dd>Bus linea 3, fermata Piazza del Mercato</dd></div>
+              <div><dt>In auto</dt><dd>Parcheggio in Piazza del Mercato, a due minuti a piedi</dd></div>
+              <div><dt>Telefono</dt><dd><a href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata.">000 000 0000</a></dd></div>
+              <div><dt>Email</dt><dd><a href="#email" data-demo-avviso="L'indirizzo è finto: in un sito vero qui si aprirebbe l'email.">segreteria@ardesia.example</a></dd></div>
+            </dl>
+            <p><a class="btn" href="#indicazioni" data-demo-avviso="In un sito vero qui si aprirebbe la mappa con il percorso."><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Indicazioni stradali</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contatti" aria-labelledby="contatti-title">
+      <div class="container contact">
+        <div class="contact__aside">
+          <h2 id="contatti-title" style="font-size:clamp(1.875rem,1.5rem + 1.6vw,2.625rem)">Scrivici</h2>
+          <div class="rule" aria-hidden="true"><span></span></div>
+          <p>Lascia nome e telefono: ti richiamiamo noi negli orari di segreteria per rispondere alle tue domande.</p>
+          <p>Preferisci passare? Ti aspettiamo in Via del Mercato 3.</p>
+        </div>
+        <form class="form" data-demo-avviso="Il messaggio non è stato inviato a nessuno: in un sito vero arriverebbe alla segreteria.">
+          <div class="form__row">
+            <div class="field"><label for="c-nome">Nome e cognome *</label><input id="c-nome" name="nome" autocomplete="name" required></div>
+            <div class="field"><label for="c-tel">Telefono *</label><input id="c-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required></div>
+          </div>
+          <div class="field">
+            <label for="c-pat">Ti interessa</label>
+            <select id="c-pat" name="patente">
+              <option>Patente B</option><option>Patente AM o moto</option><option>Patenti per lavoro (C, D, CQC)</option><option>Rinnovo o duplicato</option><option>Altro</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-msg">Messaggio</label><textarea id="c-msg" name="messaggio" rows="4"></textarea></div>
+          <label class="check"><input type="checkbox" name="privacy" required> <span>Ho letto l'informativa privacy e accetto di essere ricontattato. *</span></label>
+          <p><button class="btn btn--brick" type="submit">Invia la richiesta</button></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h2>Autoscuola Ardesia</h2>
+        <address>Via del Mercato 3, 00000 Vallefinta (XX)<br>Tel. 000 000 0000<br>segreteria@ardesia.example</address>
+      </div>
+      <div>
+        <h2>Segreteria</h2>
+        <p>Lunedì-venerdì 9:00-12:30 e 15:30-19:00<br>Sabato 9:00-12:00</p>
+      </div>
+      <nav aria-label="Link del sito">
+        <h2>Nel sito</h2>
+        <p><a href="#patenti">Patenti</a> · <a href="#documenti">Documenti</a><br><a href="#dove">Dove siamo</a></p>
+      </nav>
+    </div>
+    <div class="container footer__legal">
+      <p>© <span data-year>2026</span> Autoscuola Ardesia. Attività di fantasia: sito dimostrativo.</p>
+      <p><a href="../../index.html">Realizzato da Next Siteo</a></p>
+    </div>
+  </footer>
+
+  <script src="../comune/barra-demo.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
