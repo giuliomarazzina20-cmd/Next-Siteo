@@ -17,7 +17,7 @@ js/main.js            menu, animazioni, anteprime e modulo contatti
 assets/               favicon, immagine di anteprima per WhatsApp, illustrazioni, font
 demo/
   comune/            barra "Sito dimostrativo..." e avviso "Questa è una demo", per tutte le demo
-  autoscuola-pistacchio/   demo moderna: pre-iscrizione a step, quiz patente B, WhatsApp
+  autoscuola-pistacchio/   demo moderna: pre-iscrizione a step, «Quale patente fa per te?», WhatsApp
   autoscuola-ardesia/      demo classica: patenti, orari, documenti, mappa disegnata
   autoscuole-crocevia/     demo con gestionale: area allievi, calendario guide, lavora con noi
 sitemap.xml           elenco delle pagine per Google

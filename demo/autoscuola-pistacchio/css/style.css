@@ -806,8 +806,8 @@ html:not(.js) .header__menu-btn {
   letter-spacing: 0.06em;
 }
 .bollino__top {
-  font-size: 14px;
-  letter-spacing: 0.12em;
+  font-size: 13px;
+  letter-spacing: 0.06em;
 }
 .bollino__big {
   font-size: 32px;
@@ -1321,46 +1321,6 @@ html:not(.js) .header__menu-btn {
   }
 }
 
-/* ---------- Quiz in anteprima (home) ---------- */
-.teaser {
-  display: grid;
-  gap: var(--space-6);
-  align-items: center;
-}
-.teaser__card {
-  display: grid;
-  gap: var(--space-4);
-  transform: rotate(1.2deg);
-}
-.teaser__q {
-  font-family: var(--font-display);
-  font-size: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-.teaser__answers {
-  display: flex;
-  gap: var(--space-3);
-}
-.teaser__answers span {
-  flex: 1;
-  display: grid;
-  place-items: center;
-  min-height: 52px;
-  border: var(--border);
-  border-radius: var(--radius-pill);
-  font-weight: 800;
-}
-.teaser__answers span:first-child {
-  background: var(--lime);
-}
-@media (min-width: 900px) {
-  .teaser {
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: var(--space-8);
-  }
-}
-
 /* ---------- Genitori ---------- */
 .gen__grid {
   display: grid;
@@ -1835,129 +1795,6 @@ html:not(.js) .header__menu-btn {
   .wizard__row {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-/* ---------- Quiz patente B ---------- */
-html:not(.js) [data-quiz] {
-  display: none;
-}
-.quiz__stage {
-  min-height: 34rem;
-}
-.quiz {
-  display: grid;
-  gap: var(--space-5);
-  max-width: 48rem;
-}
-.quiz__meta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--space-3);
-  font-weight: 800;
-}
-.quiz__dots {
-  display: flex;
-  gap: 6px;
-}
-.quiz__dots span {
-  width: 16px;
-  height: 16px;
-  border: var(--border);
-  border-radius: 50%;
-  background: var(--white);
-}
-.quiz__dots span[data-r='ok'] {
-  background: var(--forest);
-}
-.quiz__dots span[data-r='ko'] {
-  background: var(--coral);
-}
-.quiz__dots span[data-r='now'] {
-  background: var(--lime);
-}
-.quiz__card {
-  display: grid;
-  gap: var(--space-5);
-}
-.quiz__sign {
-  width: 112px;
-  height: 112px;
-}
-.quiz__q {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 1.25rem + 1.2vw, 2.25rem);
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-}
-.quiz__q:focus {
-  outline: none;
-}
-.quiz__answers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-4);
-}
-.quiz__answers .btn {
-  min-height: 64px;
-  font-size: 1.25rem;
-}
-.quiz__answers .btn[disabled] {
-  cursor: default;
-  transform: none;
-  box-shadow: var(--shadow-btn-pressed);
-}
-.quiz__answers .btn[data-picked='true'] {
-  --btn-bg: var(--ink);
-  --btn-fg: var(--white);
-}
-.quiz__feedback {
-  display: grid;
-  gap: var(--space-2);
-  padding: var(--space-4) var(--space-5);
-  border: var(--border);
-  border-radius: var(--radius-md);
-  background: var(--lime);
-}
-.quiz__feedback[data-r='ko'] {
-  background: #ffd9cf;
-}
-.quiz__feedback strong {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-.quiz__score {
-  font-family: var(--font-display);
-  font-size: clamp(4rem, 3rem + 5vw, 7rem);
-  line-height: 0.9;
-  letter-spacing: -0.05em;
-}
-.quiz__review {
-  display: grid;
-  gap: var(--space-3);
-  padding: 0;
-  list-style: none;
-}
-.quiz__review li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  border: var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--white);
-}
-.quiz__review .icon {
-  width: 26px;
-  height: 26px;
-  margin-top: 0.1em;
-}
-.quiz__review .ok {
-  color: var(--forest);
-}
-.quiz__review .ko {
-  color: #b3261e;
 }
 
 /* ---------- Footer ---------- */
