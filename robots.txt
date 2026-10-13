@@ -1,0 +1,9 @@
+# Next Siteo
+# URL SEGNAPOSTO: sostituire "https://NOMEUTENTE.github.io/NOMEREPO/" con l'indirizzo vero (vedi README, punto 7).
+# Nota: i motori di ricerca leggono robots.txt solo nella radice del dominio
+# (es. nomeutente.github.io/robots.txt oppure nextsiteo.it/robots.txt).
+# Le demo restano raggiungibili ma hanno il meta tag noindex.
+User-agent: *
+Allow: /
+
+Sitemap: https://NOMEUTENTE.github.io/NOMEREPO/sitemap.xml

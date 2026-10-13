@@ -1,0 +1,96 @@
+/* ==================================================================
+   BARRA DEMO (comune a tutte le demo di Next Siteo)
+   - Barra fissa in alto che dichiara il sito come dimostrativo.
+   - Avviso "Questa è una demo" per moduli e prenotazioni finte.
+   Ogni demo include questo file e usa --demobar-h per spostare
+   il proprio header fisso sotto la barra.
+   Font di sistema: la barra non scarica nulla.
+   ================================================================== */
+
+:root {
+  --demobar-h: 48px;
+}
+@media (min-width: 720px) {
+  :root {
+    --demobar-h: 36px;
+  }
+}
+
+body {
+  padding-top: var(--demobar-h);
+}
+
+.demo-bar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--demobar-h);
+  padding: 0 12px;
+  background: #16181d;
+  color: #f2f3f5;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-align: center;
+}
+.demo-bar p {
+  margin: 0;
+}
+.demo-bar a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.demo-bar a:hover {
+  text-decoration-thickness: 2px;
+}
+.demo-bar a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ---------- Avviso "Questa è una demo" ---------- */
+.demo-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  z-index: 1001;
+  display: grid;
+  gap: 2px;
+  width: min(92vw, 25rem);
+  padding: 14px 18px;
+  background: #16181d;
+  color: #f2f3f5;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgb(22 24 29 / 0.28);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  transform: translate(-50%, 0);
+  opacity: 1;
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
+}
+.demo-toast strong {
+  font-size: 15px;
+}
+.demo-toast[data-state='hidden'] {
+  opacity: 0;
+  transform: translate(-50%, 12px);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-toast {
+    transition: none;
+  }
+}

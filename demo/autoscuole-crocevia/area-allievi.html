@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Area allievi | Autoscuole Crocevia (demo di Next Siteo)</title>
+  <meta name="description" content="Area allievi dimostrativa: calendario per prenotare le guide nelle tre sedi, stato del percorso dalla teoria alla pratica. Dati finti, nessun dato inviato.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Area allievi | Autoscuole Crocevia (demo)">
+  <meta property="og:description" content="Prenotazione delle guide e stato del percorso: un esempio di gestionale per autoscuole.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../comune/barra-demo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+
+  <header class="app-head">
+    <div class="container app-head__bar">
+      <a class="brand" href="index.html" aria-label="Autoscuole Crocevia, torna al sito">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#0f766e"/><path d="M16 4v24M4 16h24" stroke="#fff" stroke-width="6"/><path d="M16 5.5v5M16 21.5v5M5.5 16h5M21.5 16h5" stroke="#0f766e" stroke-width="1.3"/></svg>
+        <span>Crocevia<small>Area allievi</small></span>
+      </a>
+      <span class="user"><span class="user__avatar" aria-hidden="true">AP</span><span>Allievo di prova</span></span>
+    </div>
+  </header>
+
+  <main id="contenuto" class="app" tabindex="-1">
+    <div class="container">
+      <p class="notice" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Accesso di prova: allievo, guide e orari sono finti. Le prenotazioni restano solo in questa pagina e spariscono quando la chiudi.</span></p>
+
+      <div class="app__title">
+        <h1>Ciao! Ecco le tue guide</h1>
+        <p class="muted">Patente B · iscritto alla sede di Vallefinta</p>
+      </div>
+
+      <div class="tabbar" role="tablist" aria-label="Sezioni dell'area allievi">
+        <button type="button" role="tab" id="t-prenota" aria-controls="p-prenota" aria-selected="true">Prenota</button>
+        <button type="button" role="tab" id="t-guide" aria-controls="p-guide" aria-selected="false" tabindex="-1">Le mie guide<span class="count" data-count>1</span></button>
+        <button type="button" role="tab" id="t-percorso" aria-controls="p-percorso" aria-selected="false" tabindex="-1">Il mio percorso</button>
+      </div>
+
+      <!-- Prenota -->
+      <section class="panel" role="tabpanel" id="p-prenota" aria-labelledby="t-prenota" tabindex="0">
+        <div class="card filters">
+          <div class="field">
+            <label for="sede">Sede</label>
+            <select id="sede" data-sede></select>
+          </div>
+          <div class="field">
+            <label for="tipo">Tipo di guida</label>
+            <select id="tipo" data-tipo></select>
+            <p class="field__hint">Le guide notturne si fanno solo la sera.</p>
+          </div>
+        </div>
+
+        <div class="card" id="calendario">
+          <div class="week">
+            <button type="button" class="icon-btn" data-week-prev aria-label="Settimana precedente"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+            <p class="week__label" data-week-label aria-live="polite"></p>
+            <button type="button" class="icon-btn" data-week-next aria-label="Settimana successiva"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+          </div>
+          <div class="days" data-days role="group" aria-label="Giorno"></div>
+          <h2 class="sr-only" data-slots-title>Orari</h2>
+          <div class="slots" data-slots aria-live="polite"></div>
+          <div class="legend" aria-hidden="true">
+            <span><i></i> Libero</span>
+            <span><i class="busy"></i> Occupato</span>
+            <span><i class="mine"></i> La tua guida</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Le mie guide -->
+      <section class="panel" role="tabpanel" id="p-guide" aria-labelledby="t-guide" tabindex="0" hidden>
+        <div class="card">
+          <h2 style="font-size:1.25rem;margin-bottom:12px">Guide prenotate</h2>
+          <ul class="bookings" role="list" data-bookings></ul>
+        </div>
+      </section>
+
+      <!-- Il mio percorso -->
+      <section class="panel" role="tabpanel" id="p-percorso" aria-labelledby="t-percorso" tabindex="0" hidden>
+        <div class="summary" data-summary></div>
+        <div class="card">
+          <h2 style="font-size:1.25rem;margin-bottom:16px">Dalla teoria alla pratica</h2>
+          <ol class="path" role="list" data-path></ol>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog data-confirm aria-labelledby="dlg-title">
+    <form method="dialog">
+      <h2 id="dlg-title">Confermi la guida?</h2>
+      <dl data-confirm-list></dl>
+      <div class="btn-row">
+        <button class="btn" value="ok" data-confirm-ok>Prenota la guida</button>
+        <button class="btn btn--ghost" value="annulla">Annulla</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="../comune/barra-demo.js" defer></script>
+  <script src="js/dati.js" defer></script>
+  <script src="js/area.js" defer></script>
+</body>
+</html>

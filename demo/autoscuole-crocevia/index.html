@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Autoscuole Crocevia, tre sedi | Demo di Next Siteo</title>
+  <meta name="description" content="Sito dimostrativo di una rete di autoscuole di fantasia con tre sedi: area allievi con prenotazione delle guide, stato del percorso e pagina Lavora con noi. Realizzato da Next Siteo.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Autoscuole Crocevia | Sito dimostrativo di Next Siteo">
+  <meta property="og:description" content="Un esempio di sito con gestionale per autoscuole con più sedi. Attività di fantasia.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../comune/barra-demo.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.2 3.8h2.6l1.6 4.3-2.1 1.4a10.8 10.8 0 0 0 6.2 6.2l1.4-2.1 4.3 1.6v2.6a1.9 1.9 0 0 1-2 1.9A15.7 15.7 0 0 1 4.3 5.8a1.9 1.9 0 0 1 1.9-2z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-path" viewBox="0 0 24 24"><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="5.5" r="2"/><path d="M7.5 18.5h6a3.5 3.5 0 0 0 0-7h-3a3.5 3.5 0 0 1 0-7h6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M7 12h10"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+
+  <header class="header">
+    <div class="container header__bar">
+      <a class="brand" href="index.html" aria-label="Autoscuole Crocevia, torna alla home">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="#0f766e"/><path d="M16 4v24M4 16h24" stroke="#fff" stroke-width="6"/><path d="M16 5.5v5M16 21.5v5M5.5 16h5M21.5 16h5" stroke="#0f766e" stroke-width="1.3"/></svg>
+        <span>Autoscuole Crocevia<small>Tre sedi, un'unica scuola</small></span>
+      </a>
+      <nav class="nav" aria-label="Menu principale">
+        <ul role="list">
+          <li><a href="#sedi">Sedi</a></li>
+          <li><a href="#corsi">Corsi</a></li>
+          <li><a href="#area">Area allievi</a></li>
+          <li><a href="lavora-con-noi.html">Lavora con noi</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--sm" href="area-allievi.html">Area allievi</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg><span class="sr-only">Menu</span>
+        </button>
+      </div>
+    </div>
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" data-menu hidden>
+      <ul class="container" role="list">
+        <li><a href="#sedi">Sedi</a></li>
+        <li><a href="#corsi">Corsi</a></li>
+        <li><a href="#area">Area allievi</a></li>
+        <li><a href="lavora-con-noi.html">Lavora con noi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenuto" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="chip chip--accent">Vallefinta, Pratofinto, Borgo Lago</span>
+          <h1 id="hero-title">Tre sedi. Le tue guide, prenotate dal telefono.</h1>
+          <p class="hero__lead">Scegli la sede più comoda, prenota le guide quando sei libero e segui il tuo percorso dall'area allievi.</p>
+          <div class="btn-row">
+            <a class="btn" href="area-allievi.html">Prova l'area allievi <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#sedi">Trova la sede</a>
+          </div>
+        </div>
+
+        <aside class="slots-card" aria-labelledby="liberi-title">
+          <div class="slots-card__head">
+            <h2 id="liberi-title" style="font-size:1.0625rem">Prossime guide libere</h2>
+            <span class="chip">Dati di esempio</span>
+          </div>
+          <ul role="list" data-next-slots>
+            <li class="slot-row"><span class="slot-row__time">Area<br>allievi</span><span>Gli orari liberi compaiono qui.</span></li>
+          </ul>
+          <p class="slots-card__foot">Orari di esempio generati per la demo. <a href="area-allievi.html">Vedi tutto il calendario</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--white" id="sedi" aria-labelledby="sedi-title">
+      <div class="container">
+        <div class="head">
+          <h2 id="sedi-title">Le nostre sedi</h2>
+          <p>Ti iscrivi in una, fai lezione e guide dove ti è più comodo.</p>
+        </div>
+        <div class="sedi">
+          <article class="sede">
+            <div class="sede__top"><h3>Vallefinta</h3><span class="chip chip--accent">Sede principale</span></div>
+            <dl>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span class="sr-only">Indirizzo</span></dt><dd>Corso Centrale 40, 00000 Vallefinta (XX)</dd></div>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span class="sr-only">Orari</span></dt><dd>Lunedì-venerdì 9:00-19:00, sabato 9:00-12:30</dd></div>
+            </dl>
+            <div class="sede__lic"><span class="chip">AM</span><span class="chip">A</span><span class="chip">B</span><span class="chip">BE</span><span class="chip">C</span><span class="chip">CQC</span></div>
+          </article>
+          <article class="sede">
+            <div class="sede__top"><h3>Pratofinto</h3></div>
+            <dl>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span class="sr-only">Indirizzo</span></dt><dd>Via delle Querce 8, 00000 Pratofinto (XX)</dd></div>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span class="sr-only">Orari</span></dt><dd>Lunedì-venerdì 15:00-19:00</dd></div>
+            </dl>
+            <div class="sede__lic"><span class="chip">AM</span><span class="chip">A</span><span class="chip">B</span><span class="chip">BE</span></div>
+          </article>
+          <article class="sede">
+            <div class="sede__top"><h3>Borgo Lago</h3></div>
+            <dl>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span class="sr-only">Indirizzo</span></dt><dd>Lungolago 15, 00000 Borgo Lago (XX)</dd></div>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span class="sr-only">Orari</span></dt><dd>Martedì e giovedì 9:00-13:00, sabato 9:00-12:30</dd></div>
+            </dl>
+            <div class="sede__lic"><span class="chip">AM</span><span class="chip">B</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="area" aria-labelledby="area-title">
+      <div class="container feature-band">
+        <div class="head" style="margin-bottom:0">
+          <h2 id="area-title">L'area allievi, sempre in tasca</h2>
+          <p>Niente più telefonate per spostare una guida. Gli allievi fanno da soli, la segreteria vede tutto in ordine.</p>
+          <p><a class="btn" href="area-allievi.html">Prova l'area allievi</a></p>
+        </div>
+        <ul class="features" role="list">
+          <li class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+            <div><h3>Prenota e sposta le guide</h3><p>Scegli sede, giorno e orario tra quelli liberi. Se cambi idea, disdici con un tocco.</p></div>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-path"/></svg></span>
+            <div><h3>Segui il tuo percorso</h3><p>Teoria, foglio rosa, guide obbligatorie fatte e da fare: sai sempre a che punto sei.</p></div>
+          </li>
+          <li class="feature">
+            <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg></span>
+            <div><h3>Promemoria</h3><p>Un avviso il giorno prima di ogni guida, così nessuno resta ad aspettare.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--white" id="corsi" aria-labelledby="corsi-title">
+      <div class="container">
+        <div class="head">
+          <h2 id="corsi-title">Corsi e sedi</h2>
+          <p>Teoria e guide per ogni patente. Ecco dove trovi ogni corso.</p>
+        </div>
+        <div class="table-wrap" tabindex="0" role="region" aria-labelledby="corsi-title">
+          <table class="matrix">
+            <caption>Corsi disponibili in ogni sede</caption>
+            <thead>
+              <tr><th scope="col">Corso</th><th scope="col">Vallefinta</th><th scope="col">Pratofinto</th><th scope="col">Borgo Lago</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">AM, scooter e minicar</th><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td></tr>
+              <tr><th scope="row">A1, A2 e A, moto</th><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td class="no"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg><span class="sr-only">No</span></td></tr>
+              <tr><th scope="row">B, auto</th><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td></tr>
+              <tr><th scope="row">BE, auto con rimorchio</th><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td class="no"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg><span class="sr-only">No</span></td></tr>
+              <tr><th scope="row">C e CQC, per lavoro</th><td><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="sr-only">Sì</span></td><td class="no"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg><span class="sr-only">No</span></td><td class="no"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg><span class="sr-only">No</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="lavora-title">
+      <div class="container">
+        <div class="band">
+          <div>
+            <h2 id="lavora-title" style="font-size:clamp(1.375rem,1.2rem + 1vw,1.875rem);margin-bottom:6px">Cerchiamo istruttori e insegnanti di teoria</h2>
+            <p>Tre sedi, orari concordati e auto con doppi comandi. Candidati in due minuti.</p>
+          </div>
+          <a class="btn" href="lavora-con-noi.html">Lavora con noi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h2>Autoscuole Crocevia</h2>
+        <p>Tel. <a href="#chiama" data-demo-avviso="Il numero è finto: in un sito vero qui partirebbe la chiamata.">000 000 0000</a><br><a href="#email" data-demo-avviso="L'indirizzo è finto: in un sito vero qui si aprirebbe l'email.">info@crocevia.example</a></p>
+      </div>
+      <div><h2>Vallefinta</h2><address>Corso Centrale 40</address></div>
+      <div><h2>Pratofinto</h2><address>Via delle Querce 8</address></div>
+      <div><h2>Borgo Lago</h2><address>Lungolago 15</address></div>
+    </div>
+    <div class="container footer__legal">
+      <p>© <span data-year>2026</span> Autoscuole Crocevia. Attività di fantasia: sito dimostrativo.</p>
+      <p><a href="lavora-con-noi.html">Lavora con noi</a> · <a href="../../index.html">Realizzato da Next Siteo</a></p>
+    </div>
+  </footer>
+
+  <script src="../comune/barra-demo.js" defer></script>
+  <script src="js/dati.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
